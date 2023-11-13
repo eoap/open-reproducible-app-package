@@ -1,0 +1,11 @@
+ipykernel
+stac-asset
+pystac
+pystac-client
+ipyleaflet
+pydantic-yaml
+cwltool
+pydantic<2.0
+black[jupyter]
+rasterio
+cwl-utils
