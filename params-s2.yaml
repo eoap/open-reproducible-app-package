@@ -1,9 +1,0 @@
-aoi: -121.399,39.834,-120.74,40.472
-bands:
-- green
-- nir
-epsg: EPSG:4326
-stac_items:
-- https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_10TFK_20210708_0_L2A
-- https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_10TFK_20210708_1_L2A
-
