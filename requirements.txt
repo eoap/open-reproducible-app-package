@@ -5,7 +5,7 @@ pystac-client
 ipyleaflet
 pydantic-yaml
 cwltool
-pydantic<2.0
+pydantic
 black[jupyter]
 rasterio
-cwl-utils
+cwl-utils>=0.31

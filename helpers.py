@@ -121,7 +121,7 @@ def get_param_model_fields(cwl_obj):
         if not inp.default:
             fields[key] = (input_type, ...)
         else:
-            fields[key] = (input_type, inp.default, FieldInfo(title=inp.label, description=inp.doc)
+            fields[key] = (input_type, inp.default, FieldInfo(title=inp.label, description=inp.doc))
     return fields
 
 
