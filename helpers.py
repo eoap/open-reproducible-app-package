@@ -12,15 +12,17 @@ import stac_asset
 import asyncio
 from pathlib import PosixPath
 
-os.environ["GH_PAT"] = "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"
+if "GH_PAT" not in os.environ:
+    raise ValueError("GH_PAT not set")
+
 def get_release_assets(
-    user="Terradue", repo="app-package-training-bids23", token="", page=1
+    user="eoap", repo="quickwin", token="", page=1
 ):
     pat = token
     result = {}
 
     response = requests.get(
-        f"https://api.github.com/repos/{user}/{repo}/releases?per_page=100&page={page}",
+        f"https://api.github.com/repos/{user}/{repo}/releases?per_page=10&page={page}",
         headers={"Authorization": "token " + pat},
     )
     for release in response.json():
