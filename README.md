@@ -66,3 +66,7 @@ python -m venv env_reproducible_app
 source env_reproducible_app/bin/activate
 pip install -r requirements.txt
 ```
+
+The webpage of the documentation is https://eoap.github.io/open-reproducible-app-package/. 
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
