@@ -1,8 +1,8 @@
 # Open & Reproducible workflows in Earth Observation
 
-Many cloud-based solutions for workflows in EO are available to users today, but only few support reproducibility or comply with FAIR data principles. 
+Many cloud-based solutions for workflows in EO are available to users today, but only few support reproducibility or comply with the [OGC FAIR (findability, accessibility, interoperability, reusability)](https://www.ogc.org/blog-article/how-ogc-contributes-to-fair-geospatial-data/) data principles. 
 
-This short tutorial demonstrates a solution that meets these requirements
+This short tutorial demonstrates a solution that meets these requirements.
 
 ## Application Package reproducibility
 
@@ -32,7 +32,7 @@ subject: Detecting water bodies with NDWI and the Otsu threshold
 
 Hi Bob!
 
-checkout my new application package for detecting water bodies using NDWI and the Ostu threshold.
+check out my new Application Package for detecting water bodies using NDWI and the Ostu threshold.
 
 I've ran it over our test site bounding box and preliminary result look promising.
 
@@ -54,10 +54,10 @@ His environment has a container runtime (e.g. podman or docker) and the `cwltool
 Clone this repo:
 
 ```
-git clone https://github.com/eoap/quickwin.git
+git clone https://github.com/eoap/open-reproducible-app-package
 ```
 
-Click on `File` then `Open Folder...` and type `/workspace/open-reproducible-app-package/`
+Click on `File` then `Open Folder...` and browser to the cloned directory `open-reproducible-app-package`
 
 Go back to the terminal and create the Python environment with:
 
@@ -65,7 +65,12 @@ Go back to the terminal and create the Python environment with:
 python -m venv env_reproducible_app
 source env_reproducible_app/bin/activate
 pip install -r requirements.txt
+python -m ipykernel install --user --name env_reproducible_app --display-name "env_reproducible_app"
 ```
+
+## Execution
+
+The execution is operated with the Jupyter Notebook `notebook.ipynb`. 
 
 The webpage of the documentation is https://eoap.github.io/open-reproducible-app-package/. 
 
