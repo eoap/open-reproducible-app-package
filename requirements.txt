@@ -8,4 +8,4 @@ cwltool
 pydantic
 black[jupyter]
 rasterio
-cwl-utils>=0.31
+cwl-utils>=0.45
